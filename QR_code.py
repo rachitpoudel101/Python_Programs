@@ -1,7 +1,10 @@
-# Importing the qrcode library and aliasing it as 'qr'
 import qrcode as qr
-# Generating a QR code using the make() function with a URL
-img = qr.make ("http://rachitinfo.42web.io/index.html")
 
-# Saving the generated QR code image as 'rachit_cv.png'
-img.save("rachit_cv.png")
+# Taking user input for the URL
+url = input("Enter the URL for the QR code: ")
+
+# Generating a QR code using the make() function with the user-provided URL
+img = qr.make(url)
+
+# Saving the generated QR code image as 'user_qr_code.png'
+img.save("user_qr_code.png")
