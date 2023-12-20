@@ -1,5 +1,5 @@
-import tkinter as tk
-from tkinter import filedialog
+import tkinter as tk #basic gui inter face importing 
+from tkinter import filedialog # to select one or more file and return the file object dorectly.
 from reportlab.pdfgen import canvas
 from PIL import Image
 import os
