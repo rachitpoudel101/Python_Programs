@@ -24,6 +24,26 @@ def getWeather():
     current_time = local_time.strftime("%I:%M %p")
     clock.config(text=current_time)
     name.config(text="CURRENT WEATHER")
+    
+    #weather
+    api = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=0178a05a4eda46ade0bfb4a670d2fbe1"
+    json_data = requests.get(api).json()
+    conditon = json_data['weather'][0]['main']
+    desciption = json_data['weather'][0]['description']
+    temp= int(json_data['main']['temp']-273.15)
+    pressure = json_data['main']['pressure']
+    humidity = json_data['main']['humidity']
+    wind = json_data['wind']['speed']
+    
+    
+    t.config(text=(temp,"°"))
+    c.config(text=(conditon,"|","FEELS","LIKE",temp,"°"))
+    
+    w.config(text=wind) 
+    h.config(text=humidity)
+    d.config(text=desciption)
+    p.config(text=pressure)
+    
 
 #Searched box
 Search_image=PhotoImage(file="search.png")
@@ -72,13 +92,13 @@ t.place(x=400,y=150)
 c = Label(font=("arial",15,"bold"))
 c.place(x=400,y=250)
 
-w=Label(text="....",font=("arial",20,"bold"),bg="#1ab5ef")
+w=Label(text="Km/hrs",font=("arial",20,"bold"),bg="#1ab5ef")
 w.place(x=120,y=430)
 h=Label(text="%",font=("arial",20,"bold"),bg="#1ab5ef")
 h.place(x=280,y=430)
-d=Label(text="....",font=("arial",20,"bold"),bg="#1ab5ef")
+d=Label(text="---",font=("arial",20,"bold"),bg="#1ab5ef")
 d.place(x=450,y=430)
-p=Label(text="....",font=("arial",20,"bold"),bg="#1ab5ef")
+p=Label(text="Hg",font=("arial",20,"bold"),bg="#1ab5ef")  
 p.place(x=670,y=430)
 
 
