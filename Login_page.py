@@ -43,4 +43,8 @@ Password.bind('<FocusIn>',password_enter)
 Frame2=Frame(Login_Window,width=250,height=2,bg='firebrick1')
 Frame2.place(x=590, y=282)
 
+closeEye=PhotoImage(file='closeye.png')
+eyeButton = Button(Login_Window,image=closeEye)
+eyeButton.place(x=800,y=248)
+
 Login_Window.mainloop()
