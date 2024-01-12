@@ -1,18 +1,18 @@
 from instabot import Bot
 bot = Bot()
-bot.login(username="", password="")
+bot.login(username="_", password="")
 
 ######  upload a picture #######
-bot.upload_photo("pic.jpg", caption="biscuit eating baby")
+# bot.upload_photo("yoda.jpg", caption="biscuit eating baby")
 
 ######  follow someone #######
-bot.follow("elonrmuskk")
+bot.follow("ezsnippet")
 
-######  send a message #######
-bot.send_message("Hello from Rachit", ['user1','user2'])
+#####  send a message #######
+bot.send_message("Hello from Rachit how are u man its a bot message donot rply this its a code scripted message so dont rply  and it is made of the code so be careful ", ['username'])
 
 ######  get follower info #######
-my_followers = bot.get_user_followers("Rachit_poudel")
+my_followers = bot.get_user_followers("usename")
 for follower in my_followers:
     print(follower)
 
