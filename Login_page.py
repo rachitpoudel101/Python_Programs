@@ -64,7 +64,20 @@ loginButton =Button(Login_Window, text="Login", font=('open Sans',16,'bold'),fg=
 loginButton.place(x=578,y=350)
 
 
-# orLabel =Label(Login_Window,text="-------------------OR------------------",font=('Open Sans',16),fg='firebrick1')
-# orLabel
+orLabel =Label(Login_Window,text="-------------------OR------------------",font=('Open Sans',14),fg='firebrick1',bg="white")
+orLabel.place(x=583, y=400)
+
+
+facebook_logo = PhotoImage(file="facebook.png")
+fbLabel = Label(Login_Window ,image=facebook_logo,bg="white")
+fbLabel.place(x=640,y=440)
+
+Google_logo = PhotoImage(file="google.png")
+GgLabel = Label(Login_Window ,image=Google_logo,bg="white")
+GgLabel.place(x=690,y=440)
+
+Twitter_logo = PhotoImage(file="twitter.png")
+TwLabel = Label(Login_Window ,image=Twitter_logo,bg="white")
+TwLabel.place(x=745,y=440)
 
 Login_Window.mainloop()
