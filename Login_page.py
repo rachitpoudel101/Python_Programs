@@ -64,8 +64,8 @@ loginButton =Button(Login_Window, text="Login", font=('open Sans',16,'bold'),fg=
 loginButton.place(x=578,y=350)
 
 
-orLabel =Label(Login_Window,text="-------------------OR------------------",font=('Open Sans',14),fg='firebrick1',bg="white")
-orLabel.place(x=583, y=400)
+orLabel =Label(Login_Window,text="--------------OR------------",font=('Open Sans',16),fg='firebrick1',bg="white")
+orLabel.place(x=583, y=395)
 
 
 facebook_logo = PhotoImage(file="facebook.png")
