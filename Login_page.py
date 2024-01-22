@@ -80,4 +80,10 @@ Twitter_logo = PhotoImage(file="twitter.png")
 TwLabel = Label(Login_Window ,image=Twitter_logo,bg="white")
 TwLabel.place(x=745,y=440)
 
+orLabel =Label(Login_Window,text="Don't Have Account?",font=('Open Sans',9,'bold'),fg='firebrick1',bg="white")
+orLabel.place(x=590, y=500)
+
+Newaccount_Button =Button(Login_Window, text="Create new account", font=('open Sans',9,'bold underline'),fg='blue',bg='white',activeforeground="blue",activebackground="white",cursor='hand2',bd=0)
+Newaccount_Button.place(x=727,y=500)
+
 Login_Window.mainloop()
