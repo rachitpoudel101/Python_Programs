@@ -38,5 +38,19 @@ Conpasswordlabel.grid(row=7,column=0, sticky='w',padx=25,pady=(10,0))
 Conpasswordentry =Entry(frame,width=25,font=('Microsoft Yahei UI Light',10,'bold'),fg='white',bg='firebrick1')
 Conpasswordentry.grid(row=8,column=0,sticky='w',padx=25)
 
+Termandcionditon = Checkbutton(frame,text= 'I agree To The Term & Conditons',font=('Microsoft Yahei UI Light',9,'bold'),bg='white',activebackground='white',cursor='hand2')
+Termandcionditon.grid(row=9,column=0,padx=15,pady=0)
 
-Signup_Window.mainloop()
+signupButton = Button(frame,text='Sign Up',font=('Microsoft Yahei UI Light',16,'bold'),bd=0,bg='firebrick1',activebackground='firebrick1',cursor='hand2')
+signupButton.grid(row=10,column=0,pady=10)
+
+alreadyhaveaccount = Label(frame,text='Do U Have Account?',font=('Microsoft Yahei UI Light',9,'bold'),bd=0,bg='white',fg='firebrick1')
+alreadyhaveaccount.grid(row=11,column=0,padx=25,pady=10,sticky='w')
+
+login_button = Button(frame, text='Login?', font=('Microsoft Yahei UI Light', 9, 'bold'), bg='white', fg='blue', bd=0, activeforeground='blue', activebackground='white', cursor='hand2')
+login_button.place(x=170, y=484)
+
+
+
+
+Signup_Window.mainloop() 
