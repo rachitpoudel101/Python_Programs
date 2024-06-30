@@ -5,4 +5,4 @@ email_user=input("enter the email: ")
 if re.search(eamil_condition,email_user):
     print("Right email")
 else:
-    print("Wrong Email")
+    print("Wrong Email please try again ...!!!!!!!")
